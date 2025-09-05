@@ -48,7 +48,7 @@ h3,
 
 .training-plan-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 1rem;
 }
 
@@ -215,11 +215,7 @@ button.help-icon:hover {
         min-width: 70px;
     }
     .training-plan-grid {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 1rem;
-    }
-    .workout-container {
-        grid-column: span 4 / span 4;
     }
     .plan-card-header p:first-of-type,
     .plan-card-header i {
@@ -228,13 +224,6 @@ button.help-icon:hover {
     }
 }
 
-@media (min-width: 768px) {
-    .training-plan-grid {
-        grid-template-columns: repeat(5, minmax(0, 1fr));
-    }
-    .workout-container {
-        grid-column: span 5 / span 5;
-    }
-}
+
 
 
