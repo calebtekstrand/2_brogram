@@ -57,6 +57,7 @@ h3,
     cursor: pointer;
     flex-shrink: 0;
     width: 100%;
+    min-width: 100px;
 }
 
 .inactive {
