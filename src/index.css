@@ -48,7 +48,7 @@ h3,
 
 .training-plan-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, max(200px, 100%/6)), 1fr));
     gap: 1rem;
 }
 
@@ -58,6 +58,7 @@ h3,
     flex-shrink: 0;
     width: 100%;
     min-width: 100px;
+    max-width: 200px;
 }
 
 .inactive {
