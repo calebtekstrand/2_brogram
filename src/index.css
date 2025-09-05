@@ -10,7 +10,7 @@ header,
 main,
 footer {
     width: 100%;
-    max-width: 700px;
+    max-width: 1200px;
     padding: 1rem;
     margin: 0 auto;
 }
@@ -236,8 +236,4 @@ button.help-icon:hover {
     }
 }
 
-@media (min-width: 900px) {
-    main {
-        max-width: 1200px;
-    }
-}
+
