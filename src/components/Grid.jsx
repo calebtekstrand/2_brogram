@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { workoutProgram as training_plan } from '../utils/index.js'
 import WorkoutCard from './WorkoutCard.jsx'
+import moosclesSound from '../assets/sounds/Mooscles.mp3'
 
 
 export default function Grid() {
@@ -11,7 +12,7 @@ export default function Grid() {
         return entry.isComplete
     })
     
-    let mooscles = new Audio('./public/Mooscles.mp3')
+    let mooscles = new Audio(moosclesSound)
     mooscles.volume = 0.35
 
     function handleSave(index, data) {
