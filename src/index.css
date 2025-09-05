@@ -235,3 +235,9 @@ button.help-icon:hover {
         grid-column: span 5 / span 5;
     }
 }
+
+@media (min-width: 900px) {
+    main {
+        max-width: 1200px;
+    }
+}
